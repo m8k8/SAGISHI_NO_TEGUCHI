@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 日付入力のカレンダーアイコンを #0060C4 系ブルーに */
+input[type='date']::-webkit-calendar-picker-indicator {
+  color: #0060C4;     /* Chrome／Edge */
+  opacity: 1;         /* これを入れないと色が効かないことがある */
+}
+input[type='date']::-moz-calendar-picker-indicator {
+  fill: #0060C4;      /* Firefox */
+}
