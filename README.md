@@ -9,7 +9,7 @@
 **SAGISHI\_NO\_TEGUCHI** は、入力した金額をもとに架空の証券口座スマホ画面を生成し、あたかも大きな利益が出ているかのように見せかける Web アプリです。わずか **半日未満** の実装で、実際の証券アプリと見分けがつかないほど高品質な偽装画像を作成できてしまう――そんな“危うさ”を体感し、啓発することを目的としています。
 
 <p align="center">
-  <img src="./public/sample.png" alt="SAGISHI_NO_TEGUCHI sample" width="260"/>
+  <img src="./public/sample.png" alt="SAGISHI_NO_TEGUCHI sample" width="520"/>
 </p>
 
 ---
