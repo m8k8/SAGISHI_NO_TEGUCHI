@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SAGISHI\_NO\_TEGUCHI
 
-## Getting Started
+> **警告：このリポジトリは投資詐欺に悪用され得る技術的リスクを啓発するためのデモアプリです。絶対に不正利用しないでください。**
 
-First, run the development server:
+---
+
+## 概要
+
+**SAGISHI\_NO\_TEGUCHI** は、入力した金額をもとに架空の証券口座スマホ画面を生成し、あたかも大きな利益が出ているかのように見せかける Web アプリです。わずか **半日未満** の実装で、実際の証券アプリと見分けがつかないほど高品質な偽装画像を作成できてしまう――そんな“危うさ”を体感し、啓発することを目的としています。
+
+<p align="center">
+  <img src="/sample.png" alt="SAGISHI_NO_TEGUCHI demo" width="260"/>
+</p>
+
+---
+
+## 主な機能
+
+| 機能                 | 説明                                                     |
+| ------------------ | ------------------------------------------------------ |
+| ⌨️ 金額入力フォーム        | “現物” と “信用” の利益額（上限 100 億円）を入力すると即時プレビューされます           |
+| 📱 証券口座 UI ジェネレーター | 日本の代表的な証券アプリ風 UI を Tailwind CSS で再現                    |
+| 🖼️ スクリーンショット保存    | ブラウザのスクショ機能でそのまま画像化可能（本リポジトリでは自動保存機能は提供しません）           |
+| ⚡ 超短時間実装           | Next.js 15 (App Router) & TypeScript で **実装時間 ≒ 4 時間** |
+
+---
+
+## デモ
 
 ```bash
+# ローカルサーバ起動
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# ブラウザでアクセス
+http://localhost:3000/profit?cash=93890&credit=396927
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. フォームに希望の金額を入力し `実行`。
+2. 画面にモバイルサイズの証券口座 UI がレンダリングされます。
+3. ブラウザのスクリーンショット機能で画像を保存すると、まるで本物の取引履歴のような画像が完成します。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> 開発時間が短くても、視覚的に“本物らしい”偽装は容易に作れてしまうことがわかります。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 技術スタック
 
-To learn more about Next.js, take a look at the following resources:
+* **Next.js 15** (App Router, React Server Components)
+* **TypeScript**
+* **Tailwind CSS**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## セキュリティ・倫理的注意
 
-## Deploy on Vercel
+1. **本リポジトリは教育・研究目的専用** です。投資詐欺、SNS での詐称、第三者への誤認誘導など **一切の悪用を禁じます**。
+2. 作者は本リポジトリを利用・改変したことによるあらゆる損害・法的責任を負いません。
+3. 日本国内外の法令・証券取引関連規則を遵守してください。
+4. 偽装画像を見抜く力を養い、詐欺から身を守るための教材としてご活用ください。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ライセンス
+
+MIT License です。**ただし “本リポジトリを利用した詐欺行為・違法行為は許可されません”** という追加条項を README 内で明示しています。ライセンスの全文は `LICENSE` ファイルを参照してください。
+
+---
+
+## コントリビュート
+
+PR や Issue は歓迎ですが、本プロジェクトの趣旨（詐欺防止・啓発）に反する提案はお断りいたします。
+
