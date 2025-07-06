@@ -35,7 +35,7 @@ export default async function ProfitPage({
   return (
     <div className="bg-gray-100">
         <p className="text-center text-black font-bold bg-gray-100 pt-10">
-            こちらの写真をSNSにアップロードしたらあなたも億万長者！
+            これをスクショしてSNSにアップロードしたらあなたも億万長者！
         </p>
         <p className="text-center text-black font-bold mb-4 bg-gray-100 pt-2">
             ...というのは冗談ですが、SNSでシェアされている画像もこのように簡単に偽造できるので注意しましょう。
