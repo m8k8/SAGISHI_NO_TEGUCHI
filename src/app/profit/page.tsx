@@ -38,7 +38,7 @@ export default async function ProfitPage({
             こちらの写真をSNSにアップロードしたらあなたも億万長者！
         </p>
         <p className="text-center text-black font-bold mb-4 bg-gray-100 pt-2">
-            ...というのは冗談ですが、SNSでシェアされている画像もこのように簡単に偽造できるので注意しましょうという。
+            ...というのは冗談ですが、SNSでシェアされている画像もこのように簡単に偽造できるので注意しましょう。
         </p>
     <div className="min-h-screen flex items-start justify-center bg-gray-100 py-8">
       {/* Simulated phone viewport so it looks identical on PC and mobile */}
